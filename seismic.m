@@ -1,6 +1,6 @@
 function cmap = seismic(m)
 
-if ~exist('m', 'var')
+if nargin == 0
     m = 255; % default step number if m is not provided
 else
     if mod(m, 2) == 0
@@ -24,5 +24,6 @@ bb = interp1(p, b, pq, method);
 
 cmap = [rr; gg; bb].';
 cmap = cmap / max(max(cmap)); % renormalize due to extrapolation
+cmap(cmap < 0) = 0; % set negative values to zero
 
 end

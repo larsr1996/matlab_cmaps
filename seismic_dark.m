@@ -1,4 +1,4 @@
-function cmap = guppy(m)
+function cmap = seismic_dark(m)
 
 if nargin == 0
     m = 255; % default step number if m is not provided
@@ -8,10 +8,11 @@ else
     end
 end
 
-p = [0, 0.25, 0.5, 0.75, 1]; % percentages at which colors occur
-r = [250, 250, 88, 57, 30] / 255; % red values, bottom to top
-g = [144, 33, 8, 105, 203] / 255; % green values, bottom to top
-b = [79, 23, 114, 233, 191] / 255; % blue values, bottom to top
+
+p = [0, 0.25, 0.5, 0.75 ,1]; % percentages at which colors occur
+r = [33, 121, 255, 231, 109] / 255; % red values, bottom to top
+g = [73, 180, 255, 133, 2] / 255; % green values, bottom to top
+b = [117, 213, 255, 106, 32] / 255; % blue values, bottom to top
 
 pq = linspace(0,1,m); % create finer spacing with m steps
 method = 'makima'; % interpolation method
