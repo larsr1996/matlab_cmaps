@@ -6,3 +6,5 @@ By default, all colormaps have 255 different color values. If you want, you can 
 In the case of an even amount of levels specified, the scripts will add one additional level such that the colormap is symmetric.
 
 The scripts are mostly based on [this question/answer from Stack Overflow](https://stackoverflow.com/questions/30851050/how-to-create-an-interpolated-colormap-or-color-palette-from-two-colors).
+
+![alt text](https://github.com/larsr1996/matlab_cmaps/blob/main/cmap_overview.png "cmap_overview.png")
